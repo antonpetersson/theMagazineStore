@@ -1,1 +1,1 @@
-# theMagazineStore
+# the-magazine-store

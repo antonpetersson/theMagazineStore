@@ -1,0 +1,47 @@
+# Local development
+*.env
+*.dev
+
+# IDE files
+.idea
+.vscode/
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Docker
+Dockerfile
+docker-compose.yml
+
+# Dependency directories
+node_modules
+
+# Optional npm cache directory
+.npm
+
+# logs
+npm-debug.log
+
+# Optional eslint cache
+.eslintcache
+
+# Optional REPL history
+.node_repl_history
+
+# JS files to ignore
+
+
+# caches to ignore
+
+
+# CSS files to ignore
+
+
+# backups to ignore
+
