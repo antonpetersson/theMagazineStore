@@ -27,7 +27,7 @@ const router = new VueRouter({
   base: '/', // set the correct base
   routes: [ // our frontend routes
     { path: '/', component: HomePageComponent },
-    { path: '/products', component: ProductPageComponent },
+    { path: '/products/:category?', component: ProductPageComponent },
     { path: '/cart', component: CartPageComponent },
     { path: '/login', component: LoginPageComponent },
     { path: '/admin', component: AdminPageComponent }

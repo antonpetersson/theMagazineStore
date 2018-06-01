@@ -7,7 +7,7 @@ const ProductPageComponent = {
   
    <div class="row">
       <product
-        v-for="product in SearchFilter" 
+        v-for="product in filteredProducts" 
         v-bind:item="product"
         v-bind:key="product._id"
       ></product>
@@ -15,7 +15,7 @@ const ProductPageComponent = {
    
   </div>
  `,
- //Byt SearchFilter mot FilteredProducts så funkar kategorierna.
+ //Byt searchFilter mot FilteredProducts så funkar kategorierna.
  created() {
   http.get('rest/products').then((response) => {
     this.products = response.data;
@@ -25,11 +25,22 @@ const ProductPageComponent = {
   });
  },
  computed: {
-  SearchFilter: function(){
+  searchFilter: function(){
     return this.products.filter((product) => {
       return product.name.match(this.search);
     });
-
+  },
+  filteredProducts: function(){
+    return this.products.filter((product)=>{
+      if(!this.$route.params.category){
+        return true; // if no category selected, do not filter
+      }
+      for(let category of product.categories){
+        if(category.name == this.$route.params.category){
+          return true; // found matching category
+}
+      }
+    }) 
   }
  },
  data(){
