@@ -1,4 +1,5 @@
 # the-magazine-store
+# Anton Petersson, Jesper Krasse, Emil Wärdig Tsoukalas
 Vi har valt att göra dessa 4 User Stories:
 
 Som kund
