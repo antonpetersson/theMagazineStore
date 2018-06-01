@@ -1,0 +1,12 @@
+[
+  {"path":"/rest/login", "roles":[ {"role": "anonymous", "methods": ["POST"]} ]},
+  {"path":"/rest/logout", "roles":[ {"role": "user", "methods": ["GET","POST"]} ]},
+  {"path":"/rest/products*", "roles":[ {"role": "*", "methods": ["GET"]}, {"role": "admin", "methods":["PUT","POST","DELETE"]} ]},
+  {"path":"/rest/user", "roles":[ {"role": "user", "methods": ["GET"]} ]},
+  {"path":"/rest/register", "roles":[ {"role": "anonymous", "methods": ["POST"]}, {"role": "super", "methods": ["POST"]} ]},
+  {"path":"/rest/super*", "roles":[ {"role": "super", "methods": ["*"]} ]},
+  {"path":"/rest/admin*", "roles":[ {"role": "admin", "methods": ["ALL"]} ]},
+  {"path":"/rest/cart", "roles":[ {"role": "*", "methods": ["*"]} ]},
+  {"path":"/rest/pay", "roles":[ {"role": "user", "methods": ["POST"]} ]},
+  {"path":"/rest/categories*", "roles":[ {"role": "*", "methods": ["GET"]}, {"role": "admin", "methods":["PUT","POST","DELETE"]} ]}
+]
