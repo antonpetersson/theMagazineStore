@@ -5,6 +5,7 @@ Vue.component('cart-item', CartItemComponent);
 Vue.component('cart', CartComponent);
 Vue.component('shipping', ShippingComponent);
 Vue.component('product-admin', ProductAdminComponent);
+Vue.component('category-admin', CategoryAdminComponent);
 Vue.component('category', CategoryComponent);
 
 // page components (whole views)

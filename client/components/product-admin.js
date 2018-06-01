@@ -12,6 +12,9 @@ const ProductAdminComponent = {
         <label>Pris exkl. moms
           <input type="text" v-model="price" :disabled="loading" />
         </label></br>
+        <label>Kategori
+          <input type="text" v-model="category" :disabled="loading" />
+        </label></br>
         <label>Moms
           <input type="text" v-model="vat" :disabled="loading" placeholder="0.06" />
         </label></br>
@@ -29,6 +32,7 @@ const ProductAdminComponent = {
       name: '',
       description: '',
       price: 0,
+      category: '',
       vat: 0.06,
       artnr: '',
       message: '',
@@ -47,6 +51,7 @@ const ProductAdminComponent = {
         name: this.name,
         description: this.description,
         price: priceWithVat,
+        categories: [this.category],
         vat: this.vat,
         artnr: this.artnr
       }).then(response => {

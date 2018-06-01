@@ -31,7 +31,7 @@ const ProductPageComponent = {
     });
   },
   filteredProducts: function(){
-    return this.products.filter((product)=>{
+    return this.searchFilter.filter((product)=>{
       if(!this.$route.params.category){
         return true; // if no category selected, do not filter
       }

@@ -5,13 +5,9 @@ const MenuComponent = {
       <li class="nav-item">
         <router-link class="nav-link" to="/">Hem</router-link>
       </li>
-      <li class="nav-item">
-        <router-link class="nav-link" to="/products">Produkter</router-link>
-      </li>
-
       <li class="nav-item dropdown">
       <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-          Kategorier
+          Produkter
         </a>
         <div class="dropdown-menu">
         <router-link class="dropdown-item" to="/products">Alla</router-link>
