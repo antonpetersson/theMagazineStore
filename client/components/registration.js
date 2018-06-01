@@ -3,12 +3,12 @@ const RegistrationComponent = {
     <div class="card-body">
       <h2>Registrera dig</h2>
       <form @submit.prevent="submit">
-        <label>Email
+        <label>Email</br>
           <input type="text" v-model="email" :disabled="loading" />
-        </label>
-        <label>Password
+        </label></br>
+        <label>Password</br>
           <input type="password" v-model="password" :disabled="loading" />
-        </label>
+        </label></br>
         <button type="submit" :disabled="loading">Register</button>
         <br/>
         <span v-if="message">{{message}}</span>

@@ -5,8 +5,16 @@ const CartPageComponent = {
          <cart class="col-12"></cart>
          <shipping></shipping>
          <div class="col-12">
-            <label for="first-name">Förnamn:</label>
-            <input name="first-name" v-model="firstName"></input>
+            <label for="first-name">Förnamn:</label></br>
+            <input name="first-name" v-model="firstName"></input></br>
+            <label for="last-name">Efternamn:</label></br>
+            <input name="last-name"></input></br>
+            <label for="address-name">Adress:</label></br>
+            <input name="address" ></input></br>
+            <label for="zip-code">Postnummer:</label></br>
+            <input name="zip-code"></input></br>
+            <label for="city">Postort:</label></br>
+            <input name="city"></input></br>
             <button v-on:click="pay">Betala</button>
          
          </div>

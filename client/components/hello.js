@@ -9,7 +9,7 @@ const HelloComponent = {
   data(){
     return{
       title: "Welcome to The Magazine Store",
-      description: "The greatest mag store on the east side"
+      description: "An amagazing site"
     }
   }
 

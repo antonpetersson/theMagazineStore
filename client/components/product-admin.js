@@ -3,22 +3,22 @@ const ProductAdminComponent = {
     <div class="card-body">
       <h2>Skapa en produkt</h2>
       <form @submit.prevent="submit">
-        <label>Namn
+        <label>Namn</br>
           <input type="text" v-model="name" :disabled="loading" required />
         </label></br>
-        <label>Beskrivning
+        <label>Beskrivning</br>
           <input type="text" v-model="description" :disabled="loading" />
         </label></br>
-        <label>Pris exkl. moms
+        <label>Pris exkl. moms</br>
           <input type="text" v-model="price" :disabled="loading" />
         </label></br>
-        <label>Kategori
-          <input type="text" v-model="category" :disabled="loading" />
+        <label>Kategori</br>
+          <input type="text" v-model="category" :disabled="loading" placeholder="Här behövs kategori-ID"/>
         </label></br>
-        <label>Moms
+        <label>Moms</br>
           <input type="text" v-model="vat" :disabled="loading" placeholder="0.06" />
         </label></br>
-        <label>Artikelnummer
+        <label>Artikelnummer</br>
           <input type="text" v-model="artnr" :disabled="loading" placeholder="t.ex. 123abc"/>
         </label></br>
         <button type="submit" :disabled="loading">Spara produkt</button>

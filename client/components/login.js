@@ -7,12 +7,12 @@ const LoginComponent = {
         <button v-on:click="logout" :disabled="loading">Logout</button>
       </div>
       <form v-else @submit.prevent="submit">
-        <label>Email
-          <input type="text" v-model="email" :disabled="loading" />
+        <label>Email</br>
+          <input type="text" v-model="email" :disabled="loading" /></br>
         </label>
-        <label>Password
+        <label>Password</br>
           <input type="password" v-model="password" :disabled="loading" />
-        </label>
+        </label></br>
         <button type="submit" :disabled="loading">Login</button>
         <br/>
         <span v-if="message">{{message}}</span>

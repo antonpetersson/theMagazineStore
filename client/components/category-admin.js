@@ -3,7 +3,7 @@ const CategoryAdminComponent = {
     <div class="card-body">
       <h2>Skapa en kategori</h2>
       <form @submit.prevent="submit">
-        <label>Namn
+        <label>Namn</br>
           <input type="text" v-model="name" :disabled="loading" required />
         </label></br>
         <button type="submit" :disabled="loading">Spara kategori</button>
